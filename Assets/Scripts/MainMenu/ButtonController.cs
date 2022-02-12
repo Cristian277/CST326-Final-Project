@@ -44,8 +44,7 @@ public class ButtonController : MonoBehaviour, IPointerEnterHandler, IPointerExi
                 SceneManager.LoadScene("Start Menu");
                 break;
             case ButtonType.QUIT:
-                Debug.Log("QUIT BUTTON PRESSED");
-                Application.Quit();
+                UnityEditor.EditorApplication.isPlaying = false;
                 break;
         }
     }
